@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import ServiceCard from '@/components/ServiceCard';
 
 export const metadata: Metadata = {
@@ -12,94 +13,71 @@ const WA = 'https://wa.me/6285268645461?text=Halo%20Travel%20Bengkulu%2C%20saya%
 
 const services = [
   {
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-      </svg>
-    ),
+    icon: null,
     title: 'Travel Bengkulu – Palembang',
     description: 'Layanan antar jemput door to door Bengkulu–Palembang. Nyaman, aman, dan tepat waktu.',
     price: 'Rp 250.000',
     href: '/travel-bengkulu-palembang',
     badge: '🔥 Populer',
+    image: '/images/innova.jpg',
   },
   {
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-      </svg>
-    ),
+    icon: null,
     title: 'Travel Palembang – Bengkulu',
     description: 'Berangkat dari Palembang, diantar langsung ke tujuan Anda di Bengkulu.',
     price: 'Rp 250.000',
     href: '/travel-palembang-bengkulu',
+    image: '/images/avanza.jpg',
   },
   {
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-      </svg>
-    ),
+    icon: null,
     title: 'Travel Bengkulu – Jambi',
     description: 'Rute Bengkulu–Jambi dengan armada nyaman. Antar jemput di lokasi Anda.',
     price: 'Rp 250.000',
     href: '/travel-bengkulu-jambi',
+    image: '/images/innova.jpg',
   },
   {
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-      </svg>
-    ),
+    icon: null,
     title: 'Travel Jambi – Bengkulu',
     description: 'Dari Jambi langsung ke Bengkulu. Penjemputan dari rumah atau hotel Anda.',
     price: 'Rp 250.000',
     href: '/travel-jambi-bengkulu',
+    image: '/images/avanza.jpg',
   },
   {
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    ),
+    icon: null,
     title: 'Travel Bengkulu – Curup',
     description: 'Perjalanan singkat Bengkulu–Curup yang nyaman. Cocok untuk keluarga maupun bisnis.',
     price: 'Rp 80.000',
     href: '/travel-bengkulu-curup',
     badge: '💸 Hemat',
+    image: '/images/avanza.jpg',
   },
   {
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-      </svg>
-    ),
+    icon: null,
     title: 'Rental Mobil Curup',
     description: 'Sewa mobil lepas kunci di Curup. Tersedia Avanza, Innova, HiAce.',
     price: 'Rp 300.000',
     href: '/rental-mobil-curup',
+    image: '/images/hiace.jpg',
   },
   {
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-      </svg>
-    ),
+    icon: null,
     title: 'Antar Jemput Bandara Curup',
     description: 'Layanan khusus antar jemput ke Bandara Curup. On-time guarantee.',
     price: 'Rp 100.000',
     href: '/antar-jemput-bandara-curup',
+    image: '/images/innova.jpg',
+    badge: '✈️ Airport',
   },
   {
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-      </svg>
-    ),
+    icon: null,
     title: 'Kirim Paket Bengkulu–Palembang',
     description: 'Pengiriman paket barang dari Bengkulu ke Palembang dan sebaliknya.',
     price: 'Hubungi Kami',
     href: '/kirim-paket-bengkulu-palembang',
+    image: '/images/hiace.jpg',
   },
 ];
 
@@ -284,24 +262,63 @@ export default function HomePage() {
           <div className="text-center mb-12">
             <span className="badge bg-primary-100 text-primary-700 mb-3">Armada</span>
             <h2 className="section-title">Kendaraan Kami</h2>
-            <p className="section-subtitle">Tiga pilihan armada nyaman untuk perjalanan Anda</p>
+            <p className="section-subtitle">Tiga pilihan armada nyaman dan terawat untuk perjalanan Anda</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { name: 'Toyota Avanza', type: 'MPV · 7 Penumpang', desc: 'Cocok untuk perjalanan keluarga atau grup kecil. Kabin luas dan nyaman.', icon: '🚗', color: 'primary' },
-              { name: 'Toyota Innova', type: 'MPV Premium · 7 Penumpang', desc: 'Kenyamanan premium untuk perjalanan jauh. Kabin lebih lega dengan suspensi halus.', icon: '🚙', color: 'gold', featured: true },
-              { name: 'Toyota HiAce', type: 'Van · 12-14 Penumpang', desc: 'Ideal untuk grup besar atau perjalanan rombongan. Ruang bagasi ekstra luas.', icon: '🚐', color: 'primary' },
+              {
+                name: 'Toyota Avanza',
+                type: 'MPV · 7 Penumpang',
+                desc: 'Cocok untuk perjalanan keluarga atau grup kecil. Kabin luas, irit BBM, dan nyaman untuk rute dalam kota maupun antar provinsi.',
+                img: '/images/avanza.jpg',
+                specs: ['7 Penumpang', 'AC Double Blower', 'Bagasi Luas'],
+              },
+              {
+                name: 'Toyota Innova',
+                type: 'MPV Premium · 7 Penumpang',
+                desc: 'Kenyamanan premium untuk perjalanan jauh. Suspensi lebih halus, kabin lebih lega, pilihan terbaik untuk perjalanan antar kota.',
+                img: '/images/innova.jpg',
+                specs: ['7 Penumpang', 'Suspensi Premium', 'Kabin Lega'],
+                featured: true,
+              },
+              {
+                name: 'Toyota HiAce',
+                type: 'Van · 12–14 Penumpang',
+                desc: 'Ideal untuk rombongan besar atau grup keluarga. Kapasitas penumpang besar dengan ruang bagasi ekstra luas.',
+                img: '/images/hiace.jpg',
+                specs: ['12–14 Penumpang', 'Kabin Tinggi', 'Bagasi Ekstra'],
+              },
             ].map((car) => (
-              <div key={car.name} className={`card p-6 relative ${car.featured ? 'ring-2 ring-primary-500' : ''}`}>
+              <div key={car.name} className={`card overflow-hidden relative group ${car.featured ? 'ring-2 ring-primary-500' : ''}`}>
                 {car.featured && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary-600 text-white text-xs font-bold px-4 py-1 rounded-full">
-                    Paling Populer
+                  <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10 bg-primary-600 text-white text-xs font-bold px-4 py-1 rounded-full shadow-lg whitespace-nowrap">
+                    ⭐ Paling Populer
                   </div>
                 )}
-                <div className="text-5xl mb-4">{car.icon}</div>
-                <h3 className="font-display font-bold text-slate-800 text-xl mb-1">{car.name}</h3>
-                <p className="text-primary-600 text-sm font-medium mb-3">{car.type}</p>
-                <p className="text-slate-500 text-sm leading-relaxed">{car.desc}</p>
+                {/* Photo */}
+                <div className="relative h-52 overflow-hidden bg-slate-200">
+                  <Image
+                    src={car.img}
+                    alt={car.name}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-3 left-3 right-3 flex gap-2 flex-wrap">
+                    {car.specs.map((s) => (
+                      <span key={s} className="bg-white/90 text-slate-700 text-xs font-semibold px-2 py-0.5 rounded-full">
+                        {s}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                {/* Info */}
+                <div className="p-5">
+                  <h3 className="font-display font-bold text-slate-800 text-xl mb-0.5">{car.name}</h3>
+                  <p className="text-primary-600 text-sm font-semibold mb-3">{car.type}</p>
+                  <p className="text-slate-500 text-sm leading-relaxed">{car.desc}</p>
+                </div>
               </div>
             ))}
           </div>

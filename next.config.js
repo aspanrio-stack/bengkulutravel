@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    // Untuk foto lokal di /public, tidak perlu konfigurasi tambahan
+    // Jika ingin menambah gambar dari domain lain di masa depan, tambahkan di sini
+    formats: ['image/webp', 'image/avif'],
+  },
   async redirects() {
     return [
       // =============================================
