@@ -11,11 +11,10 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(url, { status: 301 });
   }
 
-  // Redirect feeds Blogger
-  if (pathname.startsWith('/feeds/')) {
-    return NextResponse.redirect(new URL('/', request.url), { status: 301 });
-  }
-
+  // Redirect feeds Blogger (termasuk URL rusak ?m=1feeds/...)
+if (pathname.startsWith('/feeds/') || searchParams.toString().includes('feeds')) {
+  return NextResponse.redirect(new URL('/', request.url), { status: 301 });
+}
   return NextResponse.next();
 }
 
