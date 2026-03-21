@@ -12,8 +12,7 @@ const nextConfig = {
       // Sumber: 9 URL terindeks bengkulutravel.com (Maret 2026)
       // CATATAN: ?m=1 (versi mobile Blogger) otomatis diabaikan Next.js
       // ================================================================
-// Blogger mobile version ?m=1 → Homepage
-{ source: '/', has: [{ type: 'query', key: 'm' }], destination: '/', permanent: true },
+
 
 // Blogger feeds → Homepage  
 { source: '/feeds/:path*', destination: '/', permanent: true },
