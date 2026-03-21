@@ -12,7 +12,8 @@ const nextConfig = {
       // Sumber: 9 URL terindeks bengkulutravel.com (Maret 2026)
       // CATATAN: ?m=1 (versi mobile Blogger) otomatis diabaikan Next.js
       // ================================================================
-
+// Homepage Blogger lama → Homepage Next.js
+{ source: '/index.html', destination: '/', permanent: true },
       // [GSC-1] Landing page utama Blogger
       // https://bengkulutravel.com/p/bengkulutravelcom-layanan-travel-antar.html
       { source: '/p/bengkulutravelcom-layanan-travel-antar.html', destination: '/', permanent: true },
