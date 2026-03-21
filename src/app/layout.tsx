@@ -6,6 +6,9 @@ import WhatsAppFloat from '@/components/WhatsAppFloat';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://bengkulutravel.com'),
+  alternates: {
+    canonical: 'https://www.bengkulutravel.com',
+  },
   title: {
     default: 'Travel Bengkulu | Antar Jemput Door to Door Terpercaya',
     template: '%s | Travel Bengkulu',
