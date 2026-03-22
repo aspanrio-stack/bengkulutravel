@@ -1,11 +1,17 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
 
+const GA_ID = 'G-H8TJZM1ZNM';
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://bengkulutravel.com'),
+  metadataBase: new URL('https://www.bengkulutravel.com'),
+  alternates: {
+    canonical: 'https://www.bengkulutravel.com',
+  },
   title: {
     default: 'Travel Bengkulu | Antar Jemput Door to Door Terpercaya',
     template: '%s | Travel Bengkulu',
@@ -25,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'id_ID',
-    url: 'https://bengkulutravel.com',
+    url: 'https://www.bengkulutravel.com',
     siteName: 'Travel Bengkulu',
     title: 'Travel Bengkulu | Antar Jemput Door to Door Terpercaya',
     description: 'Jasa travel Bengkulu terpercaya. Rute Bengkulu-Palembang, Bengkulu-Jambi, Bengkulu-Curup. Antar jemput door to door.',
@@ -43,6 +49,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id">
+      <head>
+        {/* Google Analytics GA4 */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
+      </head>
       <body>
         <Navbar />
         <main>{children}</main>
