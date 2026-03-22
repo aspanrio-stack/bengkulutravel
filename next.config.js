@@ -13,11 +13,6 @@ const nextConfig = {
       // CATATAN: ?m=1 (versi mobile Blogger) otomatis diabaikan Next.js
       // ================================================================
 
-
-// Blogger feeds → Homepage  
-{ source: '/feeds/:path*', destination: '/', permanent: true },
-      // Homepage Blogger lama → Homepage Next.js
-{ source: '/index.html', destination: '/', permanent: true },
       // [GSC-1] Landing page utama Blogger
       // https://bengkulutravel.com/p/bengkulutravelcom-layanan-travel-antar.html
       { source: '/p/bengkulutravelcom-layanan-travel-antar.html', destination: '/', permanent: true },

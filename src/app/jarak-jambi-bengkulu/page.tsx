@@ -97,6 +97,33 @@ export default function JarakJambiBengkulu() {
         <li><strong>Lubuklinggau</strong> – Kota terbesar di Sumatera Selatan bagian barat</li>
         <li><strong>Curup</strong> – Ibukota Rejang Lebong yang sejuk dengan banyak destinasi wisata</li>
       </ul>
+
+      <h2>FAQ Jarak Jambi ke Bengkulu</h2>
+
+      <h3>Bengkulu ke Jambi berapa jam perjalanannya?</h3>
+      <p>
+        Perjalanan Bengkulu ke Jambi via darat membutuhkan waktu sekitar <strong>9–12 jam</strong> tergantung kondisi jalan dan jumlah pemberhentian. Dengan travel door to door kami, perjalanan lebih efisien karena tidak perlu transit.
+      </p>
+
+      <h3>Jambi ke Bengkulu berapa km?</h3>
+      <p>
+        Jarak Jambi ke Bengkulu via jalur darat sekitar <strong>540–580 km</strong>, melewati Sarolangun, Bangko, Muara Bungo, Lubuklinggau, dan Curup.
+      </p>
+
+      <h3>Naik travel Jambi Bengkulu berapa?</h3>
+      <p>
+        Tarif travel Jambi–Bengkulu di layanan kami adalah <strong>Rp 250.000 per orang</strong> dengan sistem door to door — dijemput dari alamat Anda di Jambi, diantar langsung ke tujuan di Bengkulu.
+      </p>
+
+      <h3>Apakah ada travel Jambi Bengkulu setiap hari?</h3>
+      <p>
+        Ya, kami melayani rute Jambi–Bengkulu <strong>setiap hari</strong>. Hubungi kami via WhatsApp untuk cek jadwal dan ketersediaan kursi.
+      </p>
+
+      <h3>Bengkulu Jambi lewat mana?</h3>
+      <p>
+        Rute umum yang dilalui: <strong>Bengkulu → Curup → Lubuklinggau → Muara Bungo → Bangko → Sarolangun → Jambi</strong>. Perjalanan melewati 3 provinsi: Bengkulu, Sumatera Selatan, dan Jambi.
+      </p>
     </ArticleLayout>
   );
 }

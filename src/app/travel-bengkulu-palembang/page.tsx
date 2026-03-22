@@ -97,6 +97,38 @@ export default function TravelBengkuluPalembang() {
       <p>
         Kami telah melayani ribuan penumpang di rute Bengkulu–Palembang dengan rekam jejak yang terpercaya. Harga Rp 250.000 sudah termasuk jemputan dari rumah Anda hingga diantar ke tujuan di Palembang. Tidak perlu khawatir tentang biaya tambahan atau ongkos naik ojek ke terminal.
       </p>
+
+      <h2>FAQ Travel Bengkulu Palembang</h2>
+
+      <h3>Bengkulu ke Palembang berapa jam perjalanannya?</h3>
+      <p>
+        Perjalanan Bengkulu–Palembang via travel darat membutuhkan waktu sekitar <strong>8–10 jam</strong> dengan jarak tempuh ±460 km. Waktu ini sudah termasuk 1–2 kali berhenti di rest area.
+      </p>
+
+      <h3>Bengkulu ke Palembang berapa km?</h3>
+      <p>
+        Jarak Bengkulu ke Palembang via jalur darat sekitar <strong>460 km</strong> melewati Kepahiang, Curup, Lubuklinggau, Lahat, dan Prabumulih.
+      </p>
+
+      <h3>Apakah travel berangkat setiap hari?</h3>
+      <p>
+        Ya, kami melayani rute Bengkulu–Palembang <strong>setiap hari</strong>. Tersedia jadwal pagi, siang, dan malam sesuai kebutuhan Anda.
+      </p>
+
+      <h3>Apakah ada biaya tambahan selain Rp 250.000?</h3>
+      <p>
+        Tidak ada biaya tambahan. Tarif Rp 250.000 sudah <strong>all-in</strong> termasuk penjemputan di alamat Anda dan pengantaran ke tujuan di Palembang.
+      </p>
+
+      <h3>Berapa lama sebelumnya harus pesan?</h3>
+      <p>
+        Disarankan pesan minimal <strong>1 hari sebelum keberangkatan</strong>. Untuk musim liburan, lebih baik pesan 2–3 hari sebelumnya agar kursi tersedia.
+      </p>
+
+      <h3>Bisa muat berapa koper/bagasi?</h3>
+      <p>
+        Untuk Avanza dan Innova muat 2–3 koper besar. Untuk HiAce muat lebih banyak. Informasikan jumlah bagasi saat pemesanan agar kami siapkan kendaraan yang sesuai.
+      </p>
     </ArticleLayout>
   );
 }
