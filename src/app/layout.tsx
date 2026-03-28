@@ -28,7 +28,6 @@ export const metadata: Metadata = {
     'rental mobil curup',
     'antar jemput bandara curup',
   ],
-  // ✅ FAVICON DITAMBAHKAN DI SINI
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
@@ -57,7 +56,6 @@ export default function RootLayout({
   return (
     <html lang="id">
       <head>
-        {/* Google Analytics GA4 */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
           strategy="afterInteractive"
@@ -82,14 +80,3 @@ export default function RootLayout({
     </html>
   );
 }
-```
-
----
-
-**Langkah terakhir** — pastikan kedua file favicon ada di folder `app/`:
-```
-app/
-├── favicon.ico   ← file yang tadi didownload
-├── favicon.svg   ← file yang tadi didownload
-├── layout.tsx    ← file ini
-└── ...
